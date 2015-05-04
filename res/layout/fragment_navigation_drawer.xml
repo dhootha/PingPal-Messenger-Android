@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/PingPal_Blue"
+    android:divider="@drawable/divider_vertical"
+    android:dividerHeight="1dp"
+    android:orientation="vertical"
+    android:showDividers="middle"
+    tools:context="io.pingpal.fragments.NavigationDrawerFragment" >
+
+    <ImageView
+        android:id="@+id/pingpal_logo"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/pingpal_logo" />
+
+    <ListView
+        android:id="@+id/options_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/PingPal_Blue"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp" />
+
+</LinearLayout>

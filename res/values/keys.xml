@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="maps_key"></string>
+    <string name="app_id"></string>
+    <string name="outbox_public_key"></string>
+    <string name="outbox_private_key"></string>
+    <string name="gcm_project_id"></string>
+    
+</resources>

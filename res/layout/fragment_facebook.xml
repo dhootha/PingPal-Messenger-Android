@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical"
+    tools:context="io.pingpal.fragments.FacebookFragment"
+    android:id="@+id/layout_facebook" >
+    
+    <ImageView 
+        android:id="@+id/welcome_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />  
+    
+    <ImageView
+        android:id="@+id/welcome_layer"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp" />
+
+    <com.facebook.widget.LoginButton
+        xmlns:fb="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/authButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        fb:login_text="@string/fb_login"
+        fb:logout_text="@string/fb_logout" />
+
+    <RelativeLayout 
+        android:id="@+id/layout_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome_imageview"
+        android:layout_above="@+id/authButton">
+        
+        <TextView
+	        android:id="@+id/welcome_text"
+	        android:layout_width="300dp"
+	        android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+	        android:text="@string/welcome_text"
+	        android:textColor="@color/Grey"
+	        android:textSize="15sp"
+	        android:textStyle="italic" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/never_post_anything"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/authButton"
+        android:layout_marginTop="50dp"
+        android:text="@string/never_post"
+        android:textColor="@color/Grey" />
+
+    <TextView
+        android:id="@+id/label_name_facebook_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_alignTop="@+id/icon_facebook_fragment"
+        android:layout_marginTop="-10dp"
+        android:textColor="@color/White"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+    
+    <ImageView
+        android:id="@+id/icon_shadow"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="27dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="23dp" />
+
+    <ImageView
+        android:id="@+id/icon_facebook_fragment"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginBottom="23dp" />
+
+</RelativeLayout>

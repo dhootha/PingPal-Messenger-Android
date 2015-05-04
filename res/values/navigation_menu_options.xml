@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="conversation_menu_options">
+        <item>Friend Message</item>
+        <item>Group Message</item>
+</string-array>
+
+<string-array name="friends_menu_options">
+</string-array>
+
+<string-array name="group_menu_options">
+    <item>New Group</item>
+</string-array>
+
+</resources>

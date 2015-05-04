@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="icons_settings">
+        <item>@drawable/messages_2x</item>
+        <item>@drawable/friends_green_2x</item>
+        <item>@drawable/groups_green_2x</item>
+        <item>@drawable/groups_green_2x</item>
+        <item>@drawable/facebook_logo_2x</item>
+        <item>@drawable/settings_2x</item>
+    </array>
+    
+    <array name="emoticons">
+        <item>@drawable/ping_h100</item>
+        <item>@drawable/ping_happy_h100</item>
+        <item>@drawable/ping_omg_h100</item>
+        <item>@drawable/ping_angry_h100</item>
+        <item>@drawable/ping_sad_h100</item>
+        <item>@drawable/ping_awkward_h100</item>
+        <item>@drawable/ping_thumbs_up_h100</item>
+        <item>@drawable/ping_blush_h100</item>
+        <item>@drawable/ping_wtf_h100</item>
+        <item>@drawable/ping_scared_h100</item>
+        <item>@drawable/ping_sleepy_h100</item>
+    </array>
+    
+   	<array name="group_colors">
+        <item>@drawable/rounded_message_received</item>
+        <item>@drawable/rounded_message_received_purple</item>
+        <item>@drawable/rounded_message_received_orange</item>
+        <item>@drawable/rounded_message_received_pink</item>
+    </array>
+    
+   	<array name="ping_options">
+        <item>@string/ask</item>
+        <item>@string/allow</item>
+        <item>@string/not_allow</item>
+    </array>
+
+</resources>

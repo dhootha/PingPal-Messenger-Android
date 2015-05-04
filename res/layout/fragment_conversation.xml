@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_messages"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/White"
+    tools:context="io.pingpal.fragments.ConversationFragment" >
+     
+    <RelativeLayout
+        android:id="@+id/send_message_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/button_penguins"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@android:color/white"
+            android:radius="10dp"
+            android:text="+"
+            android:textStyle="bold"
+            android:textColor="@color/PingPal_Green"
+            android:color="@color/Grey" />
+
+        <EditText
+            android:id="@+id/message_edittext"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/button_penguins"
+            android:background="@android:color/white"
+            android:maxLength="@integer/max_message_length"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:radius="10dp"
+            android:shadowColor="@android:color/white"
+            android:textColor="@color/Grey"
+            android:color="@color/Grey" >
+        </EditText>
+
+        <Button
+            android:id="@+id/button_send"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/white"
+            android:radius="10dp"
+            android:text="@string/send"
+            android:textColor="@color/Grey"
+            android:color="@color/Grey" />
+
+    </RelativeLayout>
+    
+    <GridView
+        android:id="@+id/emoticons_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_above="@id/send_message_layout"
+        android:background="@color/PingPal_Blue"
+        android:numColumns="auto_fit"
+        android:columnWidth="100dp"
+        android:verticalSpacing="10dp"
+    	android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+    	android:gravity="center"
+    	android:visibility="gone"
+    />
+    
+    <ImageView 
+        android:id="@+id/msg_receive_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/emoticons_gridview"
+        android:layout_alignParentLeft="true"
+        android:visibility="gone"/>
+
+    <ListView
+        android:id="@+id/messages_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/msg_receive_image"
+        android:background="@android:color/white"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:paddingBottom="5dp" />
+    
+</RelativeLayout>
