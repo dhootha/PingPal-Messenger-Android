@@ -42,3 +42,5 @@ You may need to install the Android Development Toolkit plugin.
 **Target SDK Version:** 20
 
 **JDK:** 1.6
+
+Thanks to [Universal Image Loader](https://github.com/nostra13/Android-Universal-Image-Loader)
